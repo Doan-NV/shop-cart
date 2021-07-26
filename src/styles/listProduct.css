@@ -1,0 +1,135 @@
+header {
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 65px;
+}
+h1 a:hover {
+  color: lightseagreen;
+}
+.links {
+  list-style-type: none;
+  padding-top: 40px;
+}
+.links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 2px;
+}
+.links a:hover {
+  color: lightseagreen;
+}
+ul li {
+  display: inline-block;
+  /* padding: 0 15px; */
+  padding-right: 15px;
+}
+
+.menu {
+  display: none;
+}
+.close {
+  display: none;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.products .card {
+  max-width: 380px;
+  width: 100%;
+  overflow: hidden;
+  height: 570px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 15px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  max-width: 340px;
+  display: block;
+  object-fit: cover;
+}
+
+.card .box {
+  margin: 15px 0;
+}
+
+.card .box h3 {
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card .box h3 a {
+  text-decoration: none;
+  color: #333;
+}
+.card .box h3 a:hover {
+  text-decoration: none;
+  color: rgb(49, 124, 99);
+}
+.card .box p {
+  margin: 10px 0;
+  line-height: 1.5;
+  /* text-decoration: none; */
+  color: #333;
+}
+.card .box h4 {
+  color: crimson;
+}
+.card .box button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #333;
+}
+.card .box button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.card .box button:hover {
+  background: rgb(241, 96, 96);
+}
+
+.cart-icon {
+  font-size: 21px;
+}
+.cart-icon span {
+  position: absolute;
+  color: rgb(250, 69, 69);
+  margin-top: -4px;
+  font-size: 20px;
+}
+@media (max-width: 895px) {
+  .links li {
+    display: none;
+    padding: 30px 0;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+  }
+}
